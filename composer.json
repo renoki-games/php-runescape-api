@@ -1,9 +1,9 @@
 {
-    "name": "renoki-games/:package_name",
+    "name": "renoki-games/php-runescape-api",
     "description": ":package_description",
     "keywords": ["laravel", "php"],
     "license": "Apache-2.0",
-    "homepage": "https://github.com/renoki-games/:package_name",
+    "homepage": "https://github.com/renoki-games/php-runescape-api",
     "authors": [
         {
             "name": "Alex Renoki",
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RenokiGames\\:package_namespace\\": "src/"
+            "RenokiGames\\Runescape\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RenokiGames\\:package_namespace\\Test\\": "tests"
+            "RenokiGames\\Runescape\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -30,8 +30,7 @@
     "require-dev": {
         "laravel/legacy-factories": "^1.1",
         "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^5.0|^6.0",
-        "orchestra/database": "^5.0|^6.0"
+        "orchestra/testbench": "^5.0|^6.0"
     },
     "config": {
         "sort-packages": true
@@ -40,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RenokiGames\\:package_namespace\\:package_service_provider"
+                "RenokiGames\\Runescape\\RunescapeServiceProvider"
             ]
         }
     }
