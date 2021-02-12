@@ -32,7 +32,7 @@ class RsBuddy extends Client
     {
         return collect($response)->map(function ($point) use ($format) {
             if ($format) {
-                $point['ts'] = Carbon::createFromTimestamp($point['ts'])->format($format);
+                $point['ts'] = Carbon::createFromTimestamp($point['ts']/1000)->format($format);
             }
 
             return $point;
