@@ -20,6 +20,10 @@ class RunescapeServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/runescape.php', 'runescape'
         );
+
+        $this->app->bind('runescape.api', function () {
+            return new Runescape;
+        });
     }
 
     /**
