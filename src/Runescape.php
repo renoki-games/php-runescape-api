@@ -23,4 +23,9 @@ class Runescape
     {
         return new Endpoints\OsrsBox;
     }
+
+    public static function rsbuddy()
+    {
+        return new Endpoints\RsBuddy;
+    }
 }
