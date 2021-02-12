@@ -38,11 +38,13 @@ class Catalogue extends Client
             $graph['daily'] = collect($graph['daily'])
                 ->keyBy(fn ($price, $key) => Carbon::createFromTimestamp($key)->format($format))
                 ->sortBy(fn ($price, $key) => $key)
+                ->values()
                 ->toArray();
 
             $graph['average'] = collect($graph['average'])
                 ->keyBy(fn ($price, $key) => Carbon::createFromTimestamp($key)->format($format))
                 ->sortBy(fn ($price, $key) => $key)
+                ->values()
                 ->toArray();
         }
 

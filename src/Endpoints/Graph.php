@@ -35,6 +35,7 @@ class Graph extends Client
                 return $point;
             })
             ->sortBy('timestamp')
+            ->values()
             ->toArray();
     }
 }
