@@ -18,4 +18,9 @@ class Runescape
     {
         return new Endpoints\Graph;
     }
+
+    public static function osrsbox()
+    {
+        return new Endpoints\OsrsBox;
+    }
 }
