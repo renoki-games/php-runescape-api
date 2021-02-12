@@ -53,19 +53,6 @@ class Client
     }
 
     /**
-     * Merge a query with another query.
-     *
-     * @param  array  $query
-     * @return $this
-     */
-    public function mergeQuery(array $query)
-    {
-        $this->options['query'] += $query;
-
-        return $this->reinitCaller();
-    }
-
-    /**
      * Renitialize the caller.
      *
      * @return $this
