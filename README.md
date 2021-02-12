@@ -1,17 +1,15 @@
-Package Name Here
-===================================
+PHP Runescape API
+=================
 
 ![CI](https://github.com/renoki-games/php-runescape-api/workflows/CI/badge.svg?branch=master)
 [![codecov](https://codecov.io/gh/renoki-games/php-runescape-api/branch/master/graph/badge.svg)](https://codecov.io/gh/renoki-games/php-runescape-api/branch/master)
-[![StyleCI](https://github.styleci.io/repos/:styleci_code/shield?branch=master)](https://github.styleci.io/repos/:styleci_code)
+[![StyleCI](https://github.styleci.io/repos/338134444/shield?branch=master)](https://github.styleci.io/repos/338134444)
 [![Latest Stable Version](https://poser.pugx.org/renoki-games/php-runescape-api/v/stable)](https://packagist.org/packages/renoki-games/php-runescape-api)
 [![Total Downloads](https://poser.pugx.org/renoki-games/php-runescape-api/downloads)](https://packagist.org/packages/renoki-games/php-runescape-api)
 [![Monthly Downloads](https://poser.pugx.org/renoki-games/php-runescape-api/d/monthly)](https://packagist.org/packages/renoki-games/php-runescape-api)
 [![License](https://poser.pugx.org/renoki-games/php-runescape-api/license)](https://packagist.org/packages/renoki-games/php-runescape-api)
 
-**Note:** Replace  ```php-runescape-api``` ```:package_description``` ```Runescape``` ```RunescapeServiceProvider``` ```:styleci_code``` with their correct values in [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE](LICENSE) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+Runescape API is a simple wrapper for Old School Runescape, written in PHP. It aims only for OSRS, later on NSRS might be added.
 
 ## 🤝 Supporting
 
@@ -29,23 +27,9 @@ You can install the package via composer:
 composer require renoki-games/php-runescape-api
 ```
 
-Publish the config:
-
-```bash
-$ php artisan vendor:publish --provider="RenokiGames\Runescape\RunescapeServiceProvider" --tag="config"
-```
-
-Publish the migrations:
-
-```bash
-$ php artisan vendor:publish --provider="RenokiGames\Runescape\RunescapeServiceProvider" --tag="migrations"
-```
-
 ## 🙌 Usage
 
-```php
-$ //
-```
+Coming soon.
 
 ## 🐛 Testing
 

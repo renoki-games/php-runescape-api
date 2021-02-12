@@ -1,7 +1,7 @@
 {
     "name": "renoki-games/php-runescape-api",
-    "description": ":package_description",
-    "keywords": ["laravel", "php"],
+    "description": "Runescape API is a simple wrapper for Old School Runescape, written in PHP",
+    "keywords": ["laravel", "php", "api", "wrapper", "old", "school", "runescape"],
     "license": "Apache-2.0",
     "homepage": "https://github.com/renoki-games/php-runescape-api",
     "authors": [
