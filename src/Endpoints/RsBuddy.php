@@ -14,16 +14,23 @@ class RsBuddy extends Client
      */
     protected static $baseUrl = 'https://rsbuddy.com/';
 
-    public function getWeeklyGraph(string $id, string $format = null)
+    public function get3HoursGraph(string $id, string $format = null)
     {
         $response = $this->get("/exchange/graphs/180/{$id}.json")->json();
 
         return $this->processGraph($response, $format);
     }
 
-    public function getMonthlyGraph(string $id, string $format = null)
+    public function getDailyGraph(string $id, string $format = null)
     {
         $response = $this->get("/exchange/graphs/1440/{$id}.json")->json();
+
+        return $this->processGraph($response, $format);
+    }
+
+    public function get30MinsGraph(string $id, string $format = null)
+    {
+        $response = $this->get("/exchange/graphs/30/{$id}.json")->json();
 
         return $this->processGraph($response, $format);
     }
