@@ -32,4 +32,13 @@ class RsBuddyTest extends TestCase
             $this->assertNotNull($graph['ts']);
         }
     }
+
+    public function test_quarterly_graph()
+    {
+        $graphs = Runescape::rsbuddy()->getQuarterlyGraph(1511, 'Y-m-d H:i:s');
+
+        foreach ($graphs as $graph) {
+            $this->assertNotNull($graph['ts']);
+        }
+    }
 }

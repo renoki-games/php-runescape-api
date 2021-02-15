@@ -35,6 +35,13 @@ class RsBuddy extends Client
         return $this->processGraph($response, $format);
     }
 
+    public function getQuarterlyGraph(string $id, string $format = null)
+    {
+        $response = $this->get("/exchange/graphs/4320/{$id}.json")->json();
+
+        return $this->processGraph($response, $format);
+    }
+
     protected function processGraph(array $response, string $format = null)
     {
         return collect($response)->map(function ($point) use ($format) {
