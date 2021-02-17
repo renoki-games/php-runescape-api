@@ -7,22 +7,6 @@ use RenokiGames\Runescape\Client;
 
 class Catalogue extends Client
 {
-    public function getAlphas(string $category)
-    {
-        return $this->query(['category' => $category])
-            ->get('/catalogue/category.json')
-            ->json();
-    }
-
-    public function getItems(string $category, string $alpha, int $page = 1)
-    {
-        return $this->query([
-            'category' => $category,
-            'alpha' => $alpha,
-            'page' => $page,
-        ])->get('/catalogue/items.json')->json();
-    }
-
     public function getItem(string $id)
     {
         return $this->query(['item' => $id])

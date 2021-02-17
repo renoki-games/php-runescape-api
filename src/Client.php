@@ -27,7 +27,7 @@ class Client
      *
      * @var string
      */
-    protected static $baseUrl = 'https://secure.runescape.com/m=itemdb_rs/api/';
+    protected static $baseUrl = 'https://secure.runescape.com/m=itemdb_oldschool/api/';
 
     /**
      * Initialize the client.
