@@ -2,7 +2,6 @@
 
 namespace RenokiGames\Runescape\Endpoints;
 
-use Carbon\Carbon;
 use RenokiGames\Runescape\Client;
 
 class OsrsBox extends Client
